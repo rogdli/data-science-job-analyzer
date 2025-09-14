@@ -1,1 +1,1 @@
-web: python job_analyzer.py 
+web: gunicorn job_analyzer:app --host 0.0.0.0 --port $PORT
