@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-# Claude - función para limpiar salarios (vienen en formato string, con símbolos de euros y algunos con rangos)
+# función para limpiar salarios (vienen en formato string, con símbolos de euros y algunos con rangos)
 def clean_salary(salary_str):
     if pd.isna(salary_str):
         return None
